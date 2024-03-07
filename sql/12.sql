@@ -24,4 +24,5 @@ JOIN category cat ON fa.category_id = cat.category_id
 WHERE cat.name = 'Action') as t
 GROUP BY customer_id
 HAVING count(*) >= 4) as q
-join customer as cust on cust.customer_id = q.customer_id;
+join customer as cust on cust.customer_id = q.customer_id
+order by customer_id;
