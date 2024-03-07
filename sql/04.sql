@@ -34,4 +34,4 @@ WHERE
     category.name = 'Horror') as y
 on t.first_name=y.first_name and t.last_name=y.last_name
 where y.first_name is null and y.last_name is null
-order by last_name, first_name;
+order by last_name asc;
