@@ -27,4 +27,4 @@ LEFT JOIN LATERAL (
 ) r ON true
 JOIN inventory i ON r.inventory_id = i.inventory_id
 JOIN film f ON i.film_id = f.film_id
-ORDER BY 2,1 ;
+ORDER BY last_name, first_name;
